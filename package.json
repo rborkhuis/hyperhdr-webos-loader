@@ -1,6 +1,6 @@
 {
   "name": "org.webosbrew.hyperhdr.loader",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "HyperHDR loader",
   "main": "frontend/index.js",
   "moduledir": "frontend",
@@ -17,7 +17,7 @@
     "build-local:service": "mkdir -p ./service/build && cd service/build && cmake .. && make && cd ../..",
     "build-local:package": "ares-package dist/ -e enyo-ilib",
     "build-and-launch": "npm-run-all --serial build-local deploy launch",
-    "gen-manifest": "webosbrew-gen-manifest -a appinfo.json -p org.webosbrew.hyperhdr.loader_${npm_package_version}_all.ipk -o org.webosbrew.hyperhdr.loader.manifest.json --icon https://github.com/webosbrew/hyperhdr-webos-loader/raw/master/assets/logo_big.png --link https://github.com/webosbrew/hyperhdr-webos-loader --root true",
+    "gen-manifest": "webosbrew-gen-manifest -a appinfo.json -p org.webosbrew.hyperhdr.loader_${npm_package_version}_all.ipk -o org.webosbrew.hyperhdr.loader.manifest.json --icon https://github.com/webosbrew/hyperhdr-webos-loader/raw/master/assets/logo_big.png --link https://github.com/rborkhuis/hyperhdr-webos-loader --root true",
     "version": "node tools/sync-version.js && git add appinfo.json"
   },
   "assets": [
